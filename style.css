@@ -1,6 +1,23 @@
 :root {
-    
+    --clr-primary-base: hsl(243, 100%, 62%);
+    --clr-primary-light: hsl(228, 100%, 84%);
+    --clr-primary-lighter: hsl(206, 94%, 87%);
+    --clr-primary-dark: hsl(213, 96%, 18%);
+    --clr-primary-accent: hsl(354, 84%, 57%);
+
+    --clr-neutral-500: hsl(231, 11%, 63%);
+    --clr-neutral-400: hsl(229, 24%, 87%);
+    --clr-neutral-300: hsl(217, 100%, 97%);
+    --clr-neutral-200: hsl(231, 100%, 99%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --fw-reg: 400;
+    --fw-med: 500;
+    --fw-bold: 700;    
 }
+
+/* - Mobile: 375px
+- Desktop: 1440px */    
 
 body {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
