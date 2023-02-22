@@ -26,6 +26,8 @@ body {
 
 .container {
     min-width: 375px;
+    display: flex;
+    flex-direction: column;
 }
 
 aside {
@@ -56,18 +58,21 @@ aside {
 
 main {
     width: 75vw;
-    height: 55vh;
+    height: 54vh;
     margin: -4.5rem auto 0 auto;
     background-color: var(--clr-neutral-100);
     border-radius: 10px;
     padding: 0.6em 2em;
     overflow: hidden;
+    box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
 }
 
 h2 {
     color: var(--clr-primary-dark);
     font-weight: var(--fw-bold);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -85,6 +90,25 @@ button {
     flex-direction: column;
 }
 
+input {
+    border: 1px solid var(--clr-neutral-400);
+    border-radius: 5px;
+    padding: 1em 1.2em;
+    margin-bottom: 0.8rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    font-weight: var(--fw-med);
+    color: var(--clr-neutral-500);
+}
+
+label {
+    color: var(--clr-primary-dark);
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -96,6 +120,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid red;
 }
 
 footer button:last-child {
@@ -105,4 +130,8 @@ footer button:last-child {
     padding: 1em 1.2em;
     color: var(--clr-neutral-100);
     font-weight: var(--fw-med);
+}
+
+footer * {
+    border: 1px solid red;
 }
