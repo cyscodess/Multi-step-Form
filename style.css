@@ -130,6 +130,10 @@ label {
     font-weight: var(--fw-med);
 }
 
+input[type="radio"] {
+    display: none;
+}
+
 footer {
     position: fixed;
     left: 0;
