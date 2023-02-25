@@ -28,7 +28,6 @@ body {
     min-width: 350px;
     display: flex;
     flex-direction: column;
-    /* padding: 0 2em; */
 }
 
 /* break at 880px */
@@ -74,6 +73,10 @@ main {
     box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
     -webkit-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
     -moz-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
+}
+
+main:last-child {
+    padding-bottom: 1.2em;
 }
 
 .form-cont {
@@ -148,20 +151,26 @@ main .active {
     display: block;
 }
 
-footer {
+.nav-btns {
+    width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100vw;
     height: 5vh;
     background-color: var(--clr-neutral-100);
-    padding: 1.2em;
+    padding: 1.2em 0;
+    display: flex;
+}
+
+.nav-btns > div {
+    width: 75vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
-footer button:first-child {
+.nav-btns button:first-child {
     background: none;
     border: none;
     color: var(--clr-neutral-500);
@@ -169,12 +178,10 @@ footer button:first-child {
     font-weight: var(--fw-med);
 }
 
-footer button:last-child {
+.nav-btns button:last-child {
     background-color: var(--clr-primary-dark);
     border: none;
     border-radius: 5px;
     padding: 1em 1.2em;
     color: var(--clr-neutral-100);
-    font-weight: var(--fw-med);
-    margin-right: 4rem;
 }
