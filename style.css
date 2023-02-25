@@ -25,13 +25,18 @@ body {
 }
 
 .container {
-    min-width: 375px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
+    /* padding: 0 2em; */
 }
 
+/* break at 880px */
+
+/* SIDEBAR */
+
 aside {
-    width: 100%;
+    width: 100vw;
     height: 20vh;
     display: flex;
     padding-top: 2.2em;
@@ -42,7 +47,7 @@ aside {
 }
 
 .pg-num {
-    font-size: rem;
+    font-size: 1.1rem;
     color: var(--clr-neutral-100);
     border: 1px solid var(--clr-neutral-100);
     border-radius: 50%;
@@ -56,9 +61,11 @@ aside {
     display: none;
 }
 
+/* MAIN SECTION */
+
 main {
     width: 75vw;
-    height: 54vh;
+    height: auto;
     margin: -4.5rem auto 0 auto;
     background-color: var(--clr-neutral-100);
     border-radius: 10px;
@@ -67,6 +74,10 @@ main {
     box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
     -webkit-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
     -moz-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
+}
+
+.form-cont {
+    display: none;
 }
 
 h2 {
@@ -113,7 +124,6 @@ label {
     display: none;
 }
 
-
 .selection label {
     display: flex;
     flex-direction: column;
@@ -134,18 +144,21 @@ input[type="radio"] {
     display: none;
 }
 
+main .active {
+    display: block;
+}
+
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 5vh;
     background-color: var(--clr-neutral-100);
     padding: 1.2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 
 footer button:last-child {
@@ -155,8 +168,4 @@ footer button:last-child {
     padding: 1em 1.2em;
     color: var(--clr-neutral-100);
     font-weight: var(--fw-med);
-}
-
-footer * {
-    border: 1px solid red;
 }
