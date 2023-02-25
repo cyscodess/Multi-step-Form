@@ -162,10 +162,11 @@ label {
 
 .selection {
     display: flex;
+    align-items: center;
     gap: 1.2rem;
     border: 1px solid var(--clr-neutral-400);
     border-radius: 7px;
-    padding: 1.2em 1em;
+    padding: 1.05em 1em;
     margin-bottom: 1rem;
 }
 
@@ -178,19 +179,33 @@ label {
     color: var(--clr-primary-dark);
     font-weight: var(--fw-med);
     font-size: 1.1rem;
+    margin-bottom: 0.3rem;
 }
 
 .plan-price {
     color: var(--clr-neutral-500);
-    font-weight: var(--fw-med);
+    font-size: 1.02rem;
 }
 
 .switch-cont {
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
     background-color: var(--clr-neutral-200);
     font-weight: var(--fw-med);
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+}
+
+.switch-cont label {
+    color: var(--clr-neutral-500);
+    font-size: 1rem;
+    font-weight: var(--fw-med);
+}
+
+.switch-cont label.selected {
+    color: var(--clr-primary-dark);
 }
 
 input[type="radio"] {
