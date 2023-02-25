@@ -63,7 +63,7 @@ aside {
 /* MAIN SECTION */
 
 main {
-    width: 75vw;
+    width: 70vw;
     height: auto;
     margin: -4.5rem auto 0 auto;
     background-color: var(--clr-neutral-100);
@@ -78,6 +78,43 @@ main {
 main:last-child {
     padding-bottom: 1.2em;
 }
+
+.nav-btns {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5vh;
+    background-color: var(--clr-neutral-100);
+    padding: 1.2em 0;
+    display: flex;
+}
+
+.nav-btns > div {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-btns button:first-child {
+    background: none;
+    border: none;
+    color: var(--clr-neutral-500);
+    font-size: 1rem;
+    font-weight: var(--fw-med);
+}
+
+.nav-btns button:last-child {
+    background-color: var(--clr-primary-dark);
+    border: none;
+    border-radius: 5px;
+    padding: 1em 1.2em;
+    color: var(--clr-neutral-100);
+}
+
+/* FORMS STYLING */
 
 .form-cont {
     display: none;
@@ -123,8 +160,13 @@ label {
     margin-bottom: 0.25rem;
 }
 
-[data-page="1"] {
-    display: none;
+.selection {
+    display: flex;
+    gap: 1.2rem;
+    border: 1px solid var(--clr-neutral-400);
+    border-radius: 7px;
+    padding: 1.2em 1em;
+    margin-bottom: 1rem;
 }
 
 .selection label {
@@ -135,11 +177,19 @@ label {
 .plan-name {
     color: var(--clr-primary-dark);
     font-weight: var(--fw-med);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .plan-price {
     color: var(--clr-neutral-500);
+    font-weight: var(--fw-med);
+}
+
+.switch-cont {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--clr-neutral-200);
     font-weight: var(--fw-med);
 }
 
@@ -149,39 +199,4 @@ input[type="radio"] {
 
 main .active {
     display: block;
-}
-
-.nav-btns {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 5vh;
-    background-color: var(--clr-neutral-100);
-    padding: 1.2em 0;
-    display: flex;
-}
-
-.nav-btns > div {
-    width: 75vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.nav-btns button:first-child {
-    background: none;
-    border: none;
-    color: var(--clr-neutral-500);
-    font-size: 1rem;
-    font-weight: var(--fw-med);
-}
-
-.nav-btns button:last-child {
-    background-color: var(--clr-primary-dark);
-    border: none;
-    border-radius: 5px;
-    padding: 1em 1.2em;
-    color: var(--clr-neutral-100);
 }
