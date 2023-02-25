@@ -161,6 +161,14 @@ footer {
     align-items: center;
 }
 
+footer button:first-child {
+    background: none;
+    border: none;
+    color: var(--clr-neutral-500);
+    font-size: 1rem;
+    font-weight: var(--fw-med);
+}
+
 footer button:last-child {
     background-color: var(--clr-primary-dark);
     border: none;
@@ -168,4 +176,5 @@ footer button:last-child {
     padding: 1em 1.2em;
     color: var(--clr-neutral-100);
     font-weight: var(--fw-med);
+    margin-right: 4rem;
 }
