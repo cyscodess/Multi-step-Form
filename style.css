@@ -137,6 +137,11 @@ button {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
+button:hover,
+button:active {
+    cursor: pointer;
+}
+
 .form-area {
     display: flex;
     flex-direction: column;
@@ -292,19 +297,21 @@ main .active {
     color: var(--clr-primary-base);
 }
 
-[data-page="5"] {
+.confirm-cont {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 4rem 0;
+    margin: 3.2rem 0;
 }
 
-[data-page="5"] p {
+.confirm-cont p {
     font-size: 1.05rem;
     line-height: 1.8rem;
+    margin-bottom: 0;
 }
 
-[data-page="5"] img {
+.confirm-cont img {
     width: 60px;
 }
