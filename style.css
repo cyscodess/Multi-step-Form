@@ -286,3 +286,25 @@ main .active {
     font-weight: var(--fw-med);
     color: var(--clr-primary-dark);
 }
+
+.total-amt {
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-base);
+}
+
+[data-page="5"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+[data-page="5"] p {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+}
+
+[data-page="5"] img {
+    width: 60px;
+}
