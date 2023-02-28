@@ -317,22 +317,22 @@ main .active {
 }
 
 @media screen and (min-width: 880px) {
+    body {
+        display: flex; 
+        height: 100vh;
+    }
+
     .container {
         background-color: var(--clr-neutral-100);
+        border-radius: 10px;
         display: flex;
         flex-direction: row;
-        width: 80vw;
-        height: 60vh;
         justify-content: center;
         align-items: center;
+        width: 80vw;
+        height: 60vh;
         margin: auto;
         padding: 0.5em 1.2em;
-        border-radius: 10px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
         box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
         -webkit-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
         -moz-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
@@ -348,18 +348,20 @@ main .active {
     }
     
     main {
-        margin: 0 1rem;
+        border: 1px solid red;
         background: none;
         box-shadow: none;
         width: 100%;
-        border: 1px solid red;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .nav-btns {
-
+        position: static;
     }
     
 
