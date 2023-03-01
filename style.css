@@ -30,19 +30,11 @@ body {
     flex-direction: column;
 }
 
-/* break at 880px */
-
 /* SIDEBAR */
 
 aside {
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    padding-top: 2.2em;
-    justify-content: center;
-    gap: 1.4rem;
-    text-align: center;
-    background: url("images/bg-sidebar-mobile.svg") center/cover no-repeat;
+    
+    border: 1px solid red;
 }
 
 .pg-num {
@@ -63,24 +55,16 @@ aside {
 /* MAIN SECTION */
 
 main {
-    width: 70vw;
     height: auto;
-    margin: -5rem auto 0 auto;
     background-color: var(--clr-neutral-100);
     border-radius: 10px;
-    padding: 0.6em 2em;
     overflow: hidden;
     box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
     -webkit-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
     -moz-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
 }
 
-main:last-child {
-    padding-bottom: 1.2em;
-}
-
 .nav-btns {
-    width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -316,6 +300,38 @@ main .active {
     width: 60px;
 }
 
+/* MOBILE */
+
+@media screen and (max-width: 879px) {
+    aside {
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        gap: 1.4rem;
+        text-align: center;
+        background: url("images/bg-sidebar-mobile.svg") center/cover no-repeat;
+        padding-top: 2.2em;
+    }
+
+    main {
+        margin: -5rem auto 0 auto;
+        padding: 0.6em 2em;
+        width: 70vw;
+    }
+    
+    main:last-child {
+        padding-bottom: 1.2em;
+    }
+
+    .nav-btns {
+        width: 100%;
+    }
+
+}
+
+/* DESKTOP */
+
 @media screen and (min-width: 880px) {
     body {
         display: flex; 
@@ -327,12 +343,9 @@ main .active {
         border-radius: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         width: 80vw;
         height: 60vh;
         margin: auto;
-        padding: 0.5em 1.2em;
         box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
         -webkit-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
         -moz-box-shadow: -1px 18px 57px -37px rgba(0,0,0,0.45);
@@ -341,10 +354,11 @@ main .active {
     aside {
         background: url(images/bg-sidebar-desktop.svg) center/cover no-repeat;
         border-radius: 8px;
-        width: 40%;
-        height: 90%;
+        width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        /* margin-right: 4rem; */
     }
     
     main {
@@ -352,17 +366,17 @@ main .active {
         background: none;
         box-shadow: none;
         width: 100%;
-        height: auto;
-        display: flex;
+        height: 100%;
         flex-direction: column;
         justify-content: space-between;
-        margin-left: 3rem;
-        margin-right: 3rem;
     }
 
     .nav-btns {
         position: static;
     }
     
-
+    .form-cont,
+    .nav-btns {
+        padding: 2em;
+    }
 }
