@@ -141,6 +141,16 @@ input {
     margin-bottom: 0.8rem;
 }
 
+input[type="text"] {
+    color: var(--clr-primary-dark);
+    font-weight: var(--fw-bold);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--clr-primary-base);
+}
+
 input::placeholder {
     font-size: 1rem;
     font-weight: var(--fw-med);
