@@ -30,6 +30,7 @@ body {
 
 .container {
     min-width: 350px;
+    max-width: 950px;
     min-height: 550px;
     display: flex;
     flex-direction: column;
