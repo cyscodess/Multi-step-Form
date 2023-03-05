@@ -422,4 +422,22 @@ main .active {
     .nav-btns {
         padding: 2em;
     }
+
+    [data-page="2"] .form-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    [data-page="2"] .selection {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .switch-cont {
+        flex-basis: 100%;
+    }
 }
