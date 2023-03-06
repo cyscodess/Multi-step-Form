@@ -170,7 +170,6 @@ label {
     gap: 1.2rem;
     border: 1px solid var(--clr-neutral-400);
     border-radius: 7px;
-    padding: 1.05em 1em;
     margin-bottom: 1rem;
 }
 
@@ -183,7 +182,6 @@ label {
     color: var(--clr-primary-dark);
     font-weight: var(--fw-med);
     font-size: 1.1rem;
-    margin-bottom: 0.3rem;
 }
 
 .plan-price {
@@ -342,6 +340,14 @@ main .active {
         width: 100%;
     }
 
+    .selection {
+        padding: 1.05em 1em;
+    }
+
+    .plan-name {
+        margin-bottom: 0.3rem;
+    }
+
 }
 
 /* DESKTOP */
@@ -430,11 +436,23 @@ main .active {
         flex-wrap: wrap;
     }
 
+    [data-page="2"] img {
+        width: 35px;
+        height: 35px;
+    }
+
     [data-page="2"] .selection {
         width: 30%;
+        height: 140px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: start;
+        padding: 0.6em;
+    }
+    
+    .plan-box span {
+        font-size: 0.95rem;
     }
 
     .switch-cont {
