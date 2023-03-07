@@ -449,13 +449,25 @@ main .active {
         justify-content: space-between;
         align-items: start;
         padding: 0.6em;
+    } 
+
+    [data-page="2"] .selection:hover {
+        cursor: pointer;
     }
     
-    .plan-box span {
+    [data-page="2"] .plan-box span {
         font-size: 0.95rem;
     }
 
     .switch-cont {
         flex-basis: 100%;
+    }
+
+    [data-page="3"] .plan-name {
+        margin-bottom: 1.4rem;
+    }
+
+    .addon-desc {
+        font-size: 0.8rem;
     }
 }
